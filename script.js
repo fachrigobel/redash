@@ -30,10 +30,9 @@ btnCopyResultShipmentID.addEventListener("click", () => {
 });
 
 btnSubmitTrackingID.addEventListener("click", () => {
-  let resultValue = inputTextTrackingID.value.split("\n").map((TrackingID) => {
-    return parseInt(TrackingID);
+  let resultValue = inputTextTrackingID.value.split("\n").map((trackingID) => {
+    return "'" + trackingID + "'";
   });
-
   resultTrackingID.value = resultValue;
 });
 
